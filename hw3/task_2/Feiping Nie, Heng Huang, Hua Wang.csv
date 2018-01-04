@@ -1,0 +1,16 @@
+author,conference,title,year
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang'}",AAAI,learning instance specific distance for multi-instance classification.,2011
+"{'Feiping Nie', 'Heng Huang', 'Fillia Makedon', 'Hua Wang'}",IJCAI,fast nonnegative matrix tri-factorization for large-scale data co-clustering.,2011
+"{'Feiping Nie', 'Dijun Luo', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",IJCAI,robust principal component analysis with non-greedy l1-norm maximization.,2011
+"{'Farhad Kamangar', 'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",NIPS,maximum margin multi-instance learning.,2011
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",SIGIR,cross-language web page classification via dual knowledge transfer using nonnegative matrix tri-factorization.,2011
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang'}",CVPR,robust and discriminative distance for multi-instance learning.,2012
+"{'Shannon L. Risacher', 'Andrew J. Saykin', 'Sungeun Kim', 'Li Shen 0001', 'Feiping Nie', 'Jingwen Yan', 'Heng Huang', 'Hua Wang'}",NIPS,high-order multi-task feature learning to identify longitudinal phenotypic markers for alzheimer's disease progression prediction.,2012
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",CVPR,heterogeneous visual features fusion via sparse multimodal machine.,2013
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",IJCAI,early active learning via robust representation and structured sparsity.,2013
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",IJCAI,adaptive loss minimization for semi-supervised elastic embedding.,2013
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang'}",AAAI,low-rank tensor completion with spatio-temporal consistency.,2014
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang'}",AAAI,globally and locally consistent unsupervised projection.,2014
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang'}",AAAI,learning robust locality preserving projection via p-order minimization.,2015
+"{'Xuelong Li', 'Cheng Deng', 'Xinbo Gao', 'Feiping Nie', 'Heng Huang', 'Hua Wang'}",AAAI,new l1-norm relaxations and optimizations for graph clustering.,2016
+"{'Yun Liu', 'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Yiming Guo'}",AAAI,semi-supervised classifications via elastic and robust embedding.,2017

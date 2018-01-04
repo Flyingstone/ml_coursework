@@ -1,0 +1,12 @@
+author,conference,title,year
+"{'Stefano Ermon', 'Bart Selman', 'Carla P. Gomes'}",IJCAI,a flat histogram method for computing the density of states of combinatorial problems.,2011
+"{'Jon Conrad', 'Stefano Ermon', 'Bart Selman', 'Carla P. Gomes'}",IJCAI,risk-sensitive policies for sustainable renewable resource allocation.,2011
+"{'Ashish Sabharwal', 'Stefano Ermon', 'Bart Selman', 'Carla P. Gomes'}",NIPS,accelerated adaptive markov chain for partition function computation.,2011
+"{'Ashish Sabharwal', 'Stefano Ermon', 'Bart Selman', 'Carla P. Gomes'}",NIPS,density propagation and improved bounds on the partition function.,2012
+"{'Ashish Sabharwal', 'Stefano Ermon', 'Bart Selman', 'Carla P. Gomes'}",NIPS,embed and project: discrete sampling with universal hashing.,2013
+"{'Ashish Sabharwal', 'Stefano Ermon', 'Bart Selman', 'Carla P. Gomes'}",AAAI,designing fast absorbing markov chains.,2014
+"{'Carla P. Gomes', 'Yexiang Xue', 'Bart Selman', 'Stefano Ermon'}",AAAI,uncovering hidden structure through parallel problem decomposition.,2014
+"{'Bart Selman', 'John M. Gregoire', 'Stefano Ermon', 'Robert Bruce van Dover', 'Santosh K. Suram', 'Carla P. Gomes', 'Ronan Le Bras'}",AAAI,pattern decomposition with complex combinatorial constraints: application to materials discovery.,2015
+"{'Carla P. Gomes', 'Yexiang Xue', 'Bart Selman', 'Stefano Ermon'}",AAAI,uncovering hidden structure through parallel problem decomposition for the set basis problem.,2015
+"{'Carla P. Gomes', 'Yexiang Xue', 'Bart Selman', 'Stefano Ermon'}",IJCAI,uncovering hidden structure through parallel problem decomposition for the set basis problem: application to materials discovery.,2015
+"{'Yexiang Xue', 'Bart Selman', 'Zhiyuan Li', 'Stefano Ermon', 'Carla P. Gomes'}",NIPS,solving marginal map problems with np oracles and parity constraints.,2016

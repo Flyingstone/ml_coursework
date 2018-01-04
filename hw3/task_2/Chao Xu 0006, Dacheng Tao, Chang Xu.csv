@@ -1,0 +1,12 @@
+author,conference,title,year
+"{'Chao Xu 0006', 'Yong Luo', 'Dongchen Li', 'Dacheng Tao', 'Chang Xu'}",AAAI,vector-valued multi-view semi-supervsed learning for multi-label image classification.,2013
+"{'Chao Xu 0006', 'Dacheng Tao', 'Chang Xu'}",AAAI,large-margin multi-label causal feature learning.,2015
+"{'Chao Xu 0006', 'Dacheng Tao', 'Chang Xu'}",IJCAI,multi-view self-paced learning for clustering.,2015
+"{'Chao Xu 0006', 'Dacheng Tao', 'Chang Xu'}",KDD,robust extreme multi-label learning.,2016
+"{'Chao Xu 0006', 'Dacheng Tao', 'Yunhe Wang', 'Shan You', 'Chang Xu'}",NIPS,cnnpack: packing convolutional neural networks in the frequency domain.,2016
+"{'Chao Xu 0006', 'Yong Luo', 'Meng Liu', 'Dacheng Tao', 'Yonggang Wen', 'Chang Xu'}",AAAI,cost-sensitive feature selection via f-measure optimization reduction.,2017
+"{'Chao Xu 0006', 'Chang Xu', 'Dacheng Tao', 'Yunhe Wang'}",AAAI,beyond rpca: flattening complex noise in the frequency domain.,2017
+"{'Chao Xu 0006', 'Yunhe Wang', 'Dacheng Tao', 'Shan You', 'Chang Xu'}",IJCAI,privileged multi-label learning.,2017
+"{'Chao Xu 0006', 'Yixing Xu', 'Dacheng Tao', 'Chang Xu'}",IJCAI,multi-positive and unlabeled learning.,2017
+"{'Chao Xu 0006', 'Meng Liu', 'Dacheng Tao', 'Chang Xu'}",IJCAI,fast svm trained by divide-and-conquer anchors.,2017
+"{'Chao Xu 0006', 'Shan You', 'Dacheng Tao', 'Chang Xu'}",KDD,learning from multiple teacher networks.,2017

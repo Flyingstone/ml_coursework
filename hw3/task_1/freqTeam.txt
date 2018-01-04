@@ -1,0 +1,236 @@
+##########
+FREQUENT TEAMS OF 3 MEMBERS
+Min Zhang 0006, Yiqun Liu, Shaoping Ma		18
+Xueqi Cheng, Yanyan Lan, Jiafeng Guo		18
+Hua Wang, Heng Huang, Feiping Nie		15
+Heng Huang, Feiping Nie, Chris H. Q. Ding		13
+Jun Xu, Xueqi Cheng, Jiafeng Guo		12
+Jun Xu, Yanyan Lan, Jiafeng Guo		12
+Jun Xu, Yanyan Lan, Xueqi Cheng		12
+Bart Selman, Carla P. Gomes, Stefano Ermon		11
+Chang Xu, Dacheng Tao, Chao Xu 0006		11
+Hua Wang, Heng Huang, Chris H. Q. Ding		10
+Lidan Shou, Ke Chen 0005, Gang Chen 0001		10
+Wen Gao 0001, Shiguang Shan, Xilin Chen		10
+Wanli Ouyang, Hongsheng Li, Xiaogang Wang		9
+Chunhua Shen, Anton van den Hengel, Lingqiao Liu		9
+Roman Kontchakov, Frank Wolter, Michael Zakharyaschev		9
+Ruiping Wang 0001, Shiguang Shan, Xilin Chen		9
+Yingwei Pan, Ting Yao, Tao Mei		9
+Dijun Luo, Heng Huang, Chris H. Q. Ding		8
+Zhen Lei, Dong Yi, Stan Z. Li		8
+Xiaokang Yang, Junchi Yan, Hongyuan Zha		8
+Chunhua Shen, Anton van den Hengel, Qinfeng Shi		8
+Richard McCreadie, Iadh Ounis, Craig Macdonald		8
+Xia Hu, Huan Liu, Jiliang Tang		8
+Thomas S. Huang, Zhangyang Wang, Yingzhen Yang		8
+Wei Chen, Tie-Yan Liu, Zhiming Ma		8
+Bart Selman, Carla P. Gomes, Ashish Sabharwal		7
+Cho-Jui Hsieh, Pradeep Ravikumar, Inderjit S. Dhillon		7
+Claudia V. Goldman, Amos Azaria, Sarit Kraus		7
+Cyril Leung, Han Yu, Chunyan Miao		7
+Yong Yu, Qiang Yang 0001, Gui-Rong Xue		7
+Ting Yao, Tao Mei, Houqiang Li		7
+Jing Gao, Jiawei Han 0001, Wei Fan		7
+Yuchen Guo, Guiguang Ding, Jungong Han		7
+Junjie Yan, Zhen Lei, Stan Z. Li		7
+Bernt Schiele, Leonid Pishchulin, Mykhaylo Andriluka		7
+Francesca Rossi, Maria Silvia Pini, Kristen Brent Venable		7
+Maurizio Lenzerini, Giuseppe De Giacomo, Riccardo Rosati		7
+Nicholas Mattei, Haris Aziz 0001, Toby Walsh		7
+Xiaoou Tang, Xiaogang Wang, Ping Luo		7
+Qiang Liu 0006, Liang Wang 0001, Shu Wu		7
+Xuan Song, Quanshi Zhang, Ryosuke Shibasaki		7
+Toby Walsh, Haris Aziz 0001, Serge Gaspers		7
+Jiliang Tang, Huan Liu, Suhang Wang		7
+Roman Kontchakov, Vladislav Ryzhikov, Michael Zakharyaschev		7
+Jiashi Feng, Xiaojie Jin, Shuicheng Yan		7
+Tie-Yan Liu, Tao Qin, Yingce Xia		7
+Yingwei Pan, Tao Mei, Houqiang Li		7
+Yingwei Pan, Ting Yao, Houqiang Li		7
+Thomas S. Huang, Shiyu Chang, Yingzhen Yang		7
+Shiyu Chang, Zhangyang Wang, Yingzhen Yang		7
+Jiashi Feng, Yunpeng Chen, Shuicheng Yan		7
+Thomas S. Huang, Zhangyang Wang, Shiyu Chang		7
+Chunyuan Li, Zhe Gan, Lawrence Carin		7
+Amir Saffari, Horst Bischof, Christian Leistner		6
+Andrea Albarelli, Emanuele Rodolà, Andrea Torsello		6
+Bernardo Cuenca Grau, Boris Motik, Ian Horrocks		6
+Foster J. Provost, Brian Dalessandro, Claudia Perlich		6
+Jiajun Bu, Chun Chen, Can Wang		6
+Carl Vondrick, Hamed Pirsiavash, Antonio Torralba 0001		6
+Zhi-Hua Zhou, Yang Yu 0001, Chao Qian		6
+Hang Li, Jian Pei, Daxin Jiang		6
+Toby Walsh, Francesca Rossi, Kristen Brent Venable		6
+Toby Walsh, Christian Bessiere, George Katsirelos		6
+Chunhua Shen, Ian D. Reid 0001, Guosheng Lin		6
+Hua Wang, Feiping Nie, Chris H. Q. Ding		6
+Pradeep Ravikumar, Inderjit S. Dhillon, Ian En-Hsu Yen		6
+Luis Rademacher, Mikhail Belkin, James R. Voss		6
+Jonathan Brandt, Zhe Lin 0001, Xiaohui Shen		6
+Nathan R. Sturtevant, Jonathan Schaeffer, Ariel Felner		6
+Fei Wu 0001, Jun Xiao 0001, Yueting Zhuang		6
+Liang Zhao, Naren Ramakrishnan, Chang-Tien Lu		6
+Dieter Fox, Xiaofeng Ren, Liefeng Bo		6
+Tianbao Yang, Rong Jin, Lijun Zhang 0005		6
+Marco Roveri, Alessandro Cimatti, Andrea Micheli		6
+Maurizio Lenzerini, Giuseppe De Giacomo, Diego Calvanese		6
+Tie-Yan Liu, Tao Qin, Nenghai Yu		6
+Ricardo Henao, Chunyuan Li, Lawrence Carin		6
+Wanquan Liu, Svetha Venkatesh, Senjian An		6
+Nicholas Mattei, Haris Aziz 0001, Serge Gaspers		6
+Nicholas Mattei, Serge Gaspers, Toby Walsh		6
+Andrew W. Fitzgibbon, Jamie Shotton, Shahram Izadi		6
+Shengcai Liao, Zhen Lei, Stan Z. Li		6
+Shigeki Sugimoto, Yinqiang Zheng, Masatoshi Okutomi		6
+Shiqiang Yang, Fei Wang 0001, Peng Cui		6
+Junchi Yan, Hongyuan Zha, Stephen M. Chu		6
+Ting Yao, Tao Mei, Yong Rui		6
+Tomasz P. Michalak, Talal Rahwan, Nicholas R. Jennings		6
+Xiao Cai, Heng Huang, Feiping Nie		6
+Xiaodan Liang, Jiashi Feng, Shuicheng Yan		6
+Deng Cai, Jiawei Han 0001, Xiaofei He		6
+Xiaohua Liu, Furu Wei, Ming Zhou 0001		6
+Xiaoqian Wang, Feiping Nie, Heng Huang		6
+Xingjian Shi, Hao Wang 0014, Dit-Yan Yeung		6
+Anton van den Hengel, Qinfeng Shi, Yanning Zhang		6
+Tao Qin, Yingce Xia, Nenghai Yu		6
+Tie-Yan Liu, Yingce Xia, Nenghai Yu		6
+Alan L. Yuille, Yuanhao Chen, Long Zhu		6
+Mingsheng Long, Yue Cao, Jianmin Wang 0001		6
+Yue Gao, Guiguang Ding, Jungong Han		6
+Yue Gao, Yuchen Guo, Guiguang Ding		6
+Yunchen Pu, Chunyuan Li, Lawrence Carin		6
+Yunchen Pu, Zhe Gan, Lawrence Carin		6
+Zenglin Xu, Irwin King, Michael R. Lyu		6
+Ricardo Henao, Zhe Gan, Lawrence Carin		6
+Qifan Wang, Luo Si, Zhiwei Zhang		6
+Zhou Zhao, Yueting Zhuang, Xiaofei He		6
+Alessandro Artale, Roman Kontchakov, Michael Zakharyaschev		5
+Chunhua Shen, Anton van den Hengel, Anthony R. Dick		5
+Jianxiong Xiao, Aude Oliva, Antonio Torralba 0001		5
+Arthur Gretton, Bharath K. Sriperumbudur, Kenji Fukumizu		5
+Jin Tang, Bin Luo, Bo Jiang		5
+Bo Zhao 0001, Jing Gao, Jiawei Han 0001		5
+Changyou Chen, Chunyuan Li, Lawrence Carin		5
+Xiaoou Tang, Chen Change Loy, Ping Luo		5
+Chenguang Wang, Yangqiu Song, Ming Zhang 0004		5
+Christoph Feichtenhofer, Richard P. Wildes, Axel Pinz		5
+Shaowei Cai, Chuan Luo, Kaile Su		5
+Deng Cai, Jiajun Bu, Chun Chen		5
+XiaoJian Wu, Shlomo Zilberstein, Daniel Sheldon		5
+Daniele Magazzeni, Maria Fox, Derek Long		5
+Thomas S. Huang, Ding Liu, Zhangyang Wang		5
+Dipan K. Pal, Felix Juefei-Xu, Marios Savvides		5
+Fabio Patrizi, Giuseppe De Giacomo, Sebastian Sardiña		5
+Naren Ramakrishnan, Feng Chen 0001, Chang-Tien Lu		5
+Toby Walsh, Nina Narodytska, George Katsirelos		5
+Ariel Felner, Guni Sharon, Nathan R. Sturtevant		5
+Roni Stern, Guni Sharon, Ariel Felner		5
+Irwin King, Michael R. Lyu, Haiqin Yang		5
+Bo Zhang, Hang Su, Jun Zhu		5
+Irwin King, Michael R. Lyu, Hao Ma		5
+Rong Jin, Irwin King, Michael R. Lyu		5
+Lei Wang 0001, Xinwang Liu, Jianping Yin		5
+Xinwang Liu, Jianping Yin, Yong Dou		5
+Scott Cohen, Brian L. Price, Jimei Yang		5
+Jin Huang, Heng Huang, Feiping Nie		5
+Fan Zhu, Yi Fang, Jin Xie		5
+Yu Ji, Jinwei Ye, Jingyi Yu		5
+Jonathan Taylor, Shahram Izadi, Andrew W. Fitzgibbon		5
+Kate Saenko, Trevor Darrell, Judy Hoffman		5
+Kafui Dzirasa, David E. Carlson, Lawrence Carin		5
+Yihong Gong, Kai Yu 0001, Shenghuo Zhu		5
+Yiqun Liu, Ke Zhou, Shaoping Ma		5
+Bernhard Schölkopf, Arthur Gretton, Kenji Fukumizu		5
+John D. Lafferty, Larry A. Wasserman, Han Liu		5
+Li Deng, Xiaodong He, Jianfeng Gao		5
+Furu Wei, Ming Zhou 0001, Li Dong		5
+Li Liu, Ling Shao, Fumin Shen		5
+Zhenglu Yang, Masaru Kitsuregawa, Lin Li 0001		5
+Marcus Rohrbach, Kate Saenko, Trevor Darrell		5
+Christoph Rhemann, Carsten Rother, Margrit Gelautz		5
+Maria Luisa Bonet, Jordi Levy, Carlos Ansótegui		5
+Mehdi Dastani, Brian Logan, Natasha Alechina		5
+Mehrdad Mahdavi, Tianbao Yang, Rong Jin		5
+Shiqiang Yang, Meng Jiang, Peng Cui		5
+Yiqun Liu, Min Zhang, Shaoping Ma		5
+Wenwu Zhu 0001, Mingdong Ou, Peng Cui		5
+Iadh Ounis, Nicola Tonellotto, Craig Macdonald		5
+Jun Yan, Ning Liu, Zheng Chen		5
+Yong Ge, Qi Liu, Enhong Chen		5
+Qiang Liu 0006, Liang Wang 0001, Tieniu Tan		5
+Qiang Liu 0006, Tieniu Tan, Shu Wu		5
+Chao Zhang, Jiawei Han 0001, Quan Yuan		5
+Özgür Ulusoy, Ismail Sengör Altingövde, Rifat Ozcan		5
+Alan Fern, Roni Khardon, Prasad Tadepalli		5
+Maosong Sun, Zhiyuan Liu, Ruobing Xie		5
+Erez Karpas, Sarah Keren, Avigdor Gal		5
+Karthik Sridharan, Shai Shalev-Shwartz, Ohad Shamir		5
+Shangsong Liang, Maarten de Rijke, Zhaochun Ren		5
+Robert J. Woodward, Shant Karakashian, Berthe Y. Choueiry		5
+Yong Yu, Shenghua Bao, Zhong Su		5
+Xueqi Cheng, Jiafeng Guo, Shengxian Wan		5
+Yanyan Lan, Jiafeng Guo, Shengxian Wan		5
+Yanyan Lan, Xueqi Cheng, Shengxian Wan		5
+Jun Zhao 0001, Shizhu He, Kang Liu 0001		5
+Liang Wang 0001, Tieniu Tan, Shu Wu		5
+Junchi Yan, Hongyuan Zha, Shuai Xiao		5
+Bjoern Andres, Siyu Tang, Bernt Schiele		5
+Enrico Pontelli, Tran Cao Son, Son Thanh To		5
+Xiaokang Yang, Hongyuan Zha, Stephen M. Chu		5
+Xiaokang Yang, Junchi Yan, Stephen M. Chu		5
+Supratik Chakraborty, Moshe Y. Vardi, Kuldeep S. Meel		5
+Wei Chen, Taifeng Wang, Tie-Yan Liu		5
+Takahiro Okabe, Imari Sato, Yoichi Sato		5
+Tina Eliassi-Rad, Christos Faloutsos, Hanghang Tong		5
+Foster J. Provost, Brian Dalessandro, Troy Raeder		5
+Brian Dalessandro, Claudia Perlich, Troy Raeder		5
+Foster J. Provost, Claudia Perlich, Troy Raeder		5
+Dinh Q. Phung, Svetha Venkatesh, Truyen Tran 0001		5
+Wynne Hsu, Mong-Li Lee, Wei Chen 0025		5
+Wenwu Zhu 0001, Fei Wang 0001, Peng Cui		5
+Shiqiang Yang, Wenwu Zhu 0001, Peng Cui		5
+Qiang Yang 0001, Gui-Rong Xue, Wenyuan Dai		5
+Yong Yu, Gui-Rong Xue, Wenyuan Dai		5
+Yong Yu, Qiang Yang 0001, Wenyuan Dai		5
+Justin Zobel, Alistair Moffat, William Webber		5
+Krisztian Balog, Maarten de Rijke, Wouter Weerkamp		5
+Shih-Fu Chang, Zhenguo Li, Xiao-Ming Wu		5
+Liang Lin, Xiaodan Liang, Xiaohui Shen		5
+Fei Wu 0004, Xiaoke Zhu, Xiao-Yuan Jing		5
+Carla P. Gomes, Bart Selman, Yexiang Xue		5
+Carla P. Gomes, Yexiang Xue, Stefano Ermon		5
+Xiaoou Tang, Yi Sun, Xiaogang Wang		5
+Yonggang Wen, Yong Luo, Dacheng Tao		5
+Yuanyuan Liu, James Cheng, Fanhua Shang		5
+Yue Gao, Yuchen Guo, Jungong Han		5
+Deng Cai, Yueting Zhuang, Xiaofei He		5
+Yunchen Pu, Chunyuan Li, Zhe Gan		5
+Zenglin Xu, Rong Jin, Michael R. Lyu		5
+Zenglin Xu, Irwin King, Rong Jin		5
+Tieniu Tan, Ran He, Zhenan Sun		5
+Jieping Ye, Huan Liu, Zheng Zhao		5
+Zhiqiang Zhuang, Kewen Wang, Zhe Wang		5
+Qiang Yang 0001, Sinno Jialin Pan, Zhongqi Lu		5
+Deng Cai, Zhou Zhao, Xiaofei He		5
+Deng Cai, Zhou Zhao, Yueting Zhuang		5
+##########
+FREQUENT TEAMS OF 4 MEMBERS
+Jun Xu, Yanyan Lan, Xueqi Cheng, Jiafeng Guo		12
+Yingwei Pan, Ting Yao, Tao Mei, Houqiang Li		7
+Thomas S. Huang, Shiyu Chang, Zhangyang Wang, Yingzhen Yang		7
+Hua Wang, Heng Huang, Feiping Nie, Chris H. Q. Ding		6
+Nicholas Mattei, Haris Aziz 0001, Serge Gaspers, Toby Walsh		6
+Tao Qin, Yingce Xia, Nenghai Yu, Tie-Yan Liu		6
+Qiang Liu 0006, Liang Wang 0001, Tieniu Tan, Shu Wu		5
+Yanyan Lan, Xueqi Cheng, Jiafeng Guo, Shengxian Wan		5
+Xiaokang Yang, Junchi Yan, Hongyuan Zha, Stephen M. Chu		5
+Foster J. Provost, Brian Dalessandro, Claudia Perlich, Troy Raeder		5
+Yong Yu, Qiang Yang 0001, Gui-Rong Xue, Wenyuan Dai		5
+Yue Gao, Yuchen Guo, Guiguang Ding, Jungong Han		5
+Yunchen Pu, Chunyuan Li, Zhe Gan, Lawrence Carin		5
+Zenglin Xu, Irwin King, Rong Jin, Michael R. Lyu		5
+Deng Cai, Zhou Zhao, Yueting Zhuang, Xiaofei He		5
+##########
+FREQUENT TEAMS OF 5 MEMBERS

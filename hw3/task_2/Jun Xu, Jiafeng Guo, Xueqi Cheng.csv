@@ -1,0 +1,13 @@
+author,conference,title,year
+"{'Jiafeng Guo', 'Jun Xu', 'Xiaohui Yan', 'Xueqi Cheng', 'Yanyan Lan'}",AAAI,a probabilistic model for bursty topic discovery in microblogs.,2015
+"{'Jiafeng Guo', 'Jun Xu', 'Yanyan Lan', 'Pengfei Wang', 'Xueqi Cheng', 'Shengxian Wan'}",SIGIR,learning hierarchical representation model for nextbasket recommendation.,2015
+"{'Jiafeng Guo', 'Jun Xu', 'Long Xia', 'Xueqi Cheng', 'Yanyan Lan'}",SIGIR,learning maximal marginal relevance model via directly optimizing diversity evaluation measures.,2015
+"{'Jiafeng Guo', 'Jun Xu', 'Yanyan Lan', 'Xueqi Cheng', 'Shengxian Wan', 'Liang Pang'}",AAAI,a deep architecture for semantic matching with multiple positional sentence representations.,2016
+"{'Jiafeng Guo', 'Jun Xu', 'Yanyan Lan', 'Xueqi Cheng', 'Shengxian Wan', 'Liang Pang'}",AAAI,text matching as image recognition.,2016
+"{'Jiafeng Guo', 'Jun Xu', 'Xueqi Cheng', 'Yanyan Lan', 'Liang Pang'}",AAAI,span: understanding a question with its support answers.,2016
+"{'Jiafeng Guo', 'Jun Xu', 'Xueqi Cheng', 'Fei Sun', 'Yanyan Lan'}",AAAI,inside out: two jointly predictive models for word representations and phrase representations.,2016
+"{'Jiafeng Guo', 'Jun Xu', 'Yanyan Lan', 'Xueqi Cheng', 'Shengxian Wan', 'Liang Pang'}",IJCAI,match-srnn: modeling the recursive matching structure with spatial rnn.,2016
+"{'Jiafeng Guo', 'Jun Xu', 'Xueqi Cheng', 'Fei Sun', 'Yanyan Lan'}",IJCAI,sparse word embeddings using ℓ1 regularized online learning.,2016
+"{'Jiafeng Guo', 'Jun Xu', 'Long Xia', 'Xueqi Cheng', 'Yanyan Lan'}",SIGIR,modeling document novelty with neural tensor network for search result diversification.,2016
+"{'Jiafeng Guo', 'Jun Xu', 'Xueqi Cheng', 'Yanyan Lan', 'Zheng Wei'}",SIGIR,reinforcement learning to rank with markov decision process.,2017
+"{'Jiafeng Guo', 'Jun Xu', 'Wei Zeng', 'Long Xia', 'Xueqi Cheng', 'Yanyan Lan'}",SIGIR,adapting markov decision process for search result diversification.,2017

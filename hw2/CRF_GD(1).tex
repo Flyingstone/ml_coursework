@@ -1,0 +1,137 @@
+\documentclass[a4paper,oneside,12pt]{article}
+
+\usepackage{ctex}
+\usepackage{booktabs}
+\usepackage{indentfirst}%首行缩进宏包
+\usepackage{cite}%引用宏包
+\usepackage{setspace}%间距宏包
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepgflibrary{arrows}
+\usepackage{graphicx}%图片
+\usepackage{float}%强制图片位置
+\usepackage[unicode=true,colorlinks,linkcolor=blue]{hyperref}%链接宏包
+\usepackage{hyperref}
+\usepackage{makecell,rotating,multirow,diagbox}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[titletoc]{appendix}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\usepackage{cite}
+
+
+\setlength{\parindent}{2em}%设置默认缩进
+
+
+\title{算法推导}
+\author{李沛泽\footnote{工学院,1701111586@pku.edu.cn}:1701111586 \\晁越\footnote{物理学院,litterel@pku.edu.cn}:1601110127}
+\date{\today}
+
+
+\begin{document}
+\bibliographystyle{plain}
+\begin{spacing}{1.5}%1.5倍行距
+
+\maketitle
+%\newpage
+%\tableofcontents
+\newpage
+
+
+\section{条件随机场模型学习的梯度下降算法}
+输入：特征函数$f_1,f_2,\cdots,f_n$；经验分布$\widetilde{P}(X,Y)$；\par
+输出：最优参数值$\hat{\omega}$；最优模型$P_{\hat{\omega}}(y|x)$.
+\begin{enumerate}
+\item 选定初始点$\omega^{(0)}$，置$k=0$
+\item 计算$f(\omega^{(k)})$
+\item 计算梯度$g_k=g(\omega^{(k)})$，若$\Vert g_k \Vert < \varepsilon$，则停止计算，令$\hat{\omega}=\omega^{(k)}$；否则，令$p_k=-g(\omega^{(k)})$，求$\lambda_k$，使得
+\begin{equation}
+\begin{array}{l}
+f(\omega^{(k)}+\lambda_kp_k)=\min\limits_{\lambda\geq0}f(\omega^{(k)}+\lambda p_k)\\
+\end{array}
+\end{equation}
+\item 置$\omega^{(k+1)}=\omega^{(k)}+\lambda_k p_k$，计算$f(\omega^{(k+1)})$,当$\Vert f(\omega^{(k+1)})-f(\omega^{(k)}) \Vert < \varepsilon$或$\Vert \omega^{(k+1)}-\omega^{(k)} \Vert < \varepsilon$时，停止迭代，令$\hat{\omega}=\omega^{(k+1)}$
+\item 否则，置$k=k+1$，转3
+\end{enumerate}
+
+\section{非监督朴素贝叶斯算法的EM导出}
+\subsection{模型描述}
+朴素贝叶斯算法可以应用在文本分类，垃圾邮件过滤等方面，一般情况下样本形式为$\{ (x^{(1)},z^{(1)}),\ldots, (x^{(m)},z^{(m)})\}$，其中$x$表示样本特征，$z$表示样本类别，根据样本可以生成先验概率$p(z)$的分布以及条件概率分布$p(x|z)$，然后由贝叶斯公式
+\[ p(z|x)= \frac{p(x|z)p(z)}{p(x)}\]
+来计算后验概率，比较后验概率的大小给出测试样本所属类别。 \par
+在非监督学习的情况下，由于训练样本没有给出类别，所以需要使用非监督的朴素贝叶斯学习方法。以垃圾邮件过滤为例，给定m个样本的训练集合$\{ x^{(1)},\ldots,x^{(m)}\}$，每个样本$x^{(i)}$属于$(0,1)^n$，即根据词典将邮件文本转化为$n$维的$(0,1)$向量，故$x_j^{(i)}$表示词典中第$j$个词是否出现在样本$i$中。我们需要根据这些没有类别标记的训练样本得到先验概率和后验概率。下面我们通过EM算法来导出非监督朴素贝叶斯学习方法。\par
+\subsection{算法推导}
+\begin{description}
+  \item[明确隐变量] 观察到的数据是每一个样本对应的n维$(0,1)$向量，隐变量是类别$z$ 的先验概率，以及在$z$的条件下字典中第$j$个元素是否出现的条件概率。令$\mu = p(z=1),\Sigma=p(x|z)$，其中$\Sigma$是一个$n \times 2$ 维矩阵，即$p(x^{(i)}_j=1|z^{(i)}=1) =\Sigma_{j,1}$,
+      $  p(x^{(i)}_j=1|z^{(i)}=0) =\Sigma_{j,0}$。上标$i$表示第$i$个样本。
+      $\mu$和$\Sigma$ 等价于这个模型的全部参数$\theta$。
+
+      \item[EM算法E步：确定Q函数] 首先我们可以写出EM算法的$Q$函数
+        \begin{align*}
+        Q(\theta,\theta^{(k)}) & =E_z[\log p(x,z|\theta)|x,\theta^{(k)}] \\
+         & =\sum_{i=1}^{m} \sum_{z^{(i)}}\log p(x^{(i)},z^{(i)}|\theta)p(z^{(i)}|x^{(i)},\theta ^{(k)})
+      \end{align*}
+
+      其中
+      \begin{align*}
+        \log p(x^{(i)},z^{(i)}|\theta) &=\log ( p(x^{(i)}|z^{(i)},\theta) p(z^{(i)}|\theta)) \\
+         &=\log p(x^{(i)}|z^{(i)},\theta)+\log p(z^{(i)}|\theta)
+      \end{align*}
+
+      带入$Q(\theta,\theta^{(k)})$的表达式中,可以将$Q(\theta,\theta^{(k)})$写成两部分之和，第一部分为
+
+      \begin{align}\label{p1}
+        part(1) = &\sum_{i=1}^{m} \sum_{z^{(i)}} \log p(z^{(i)}|\theta)p(z^{(i)}|x^{(i)},\theta ^{(k)}) \\
+        = &\sum_{i=1}^{m} \log p(z^{(i)}=1|\theta)p(z^{(i)}=1|x^{(i)},\theta ^{(k)}) \\
+         &+\sum_{i=1}^{m} \log p(z^{(i)}=0|\theta)p(z^{(i)}=0|x^{(i)},\theta ^{(k)}) \\
+         = & \log \mu \sum_{i=1}^{m}  p(z^{(i)}=1|x^{(i)},\theta ^{(k)}) \\
+          & + \log(1-\mu) \sum_{i=1}^{m} p(z^{(i)}=0|x^{(i)},\theta ^{(k)})
+      \end{align}
+
+      结合朴素贝叶斯的基本假设
+      \begin{align*}
+        p(x^{(i)}|z^{(i)})=&\prod_{j=1}^n p(x^{(i)}_j|z^{(i)})  \\
+         = & \prod_{x^{(i)}_j=1} \Sigma_{j,z^{(i)}} \prod_{x^{(i)}_j=0}(1-\Sigma_{j,z^{(i)}}) \\
+      \end{align*}
+
+      第二部分可写为
+      \begin{align}\label{p2}
+        part(2) = & \sum_{j=1}^{n} \sum_{i=1}^{m} \sum_{z^{(i)}} p(z^{(i)}|x^{(i)},\theta ^{(k)}) \log p(x^{(i)}_j|z^{(i)},\theta) \\
+        = & \sum_{j=1}^{n} \sum_{i=1}^{m}  p(z^{(i)}=1|x^{(i)},\theta ^{(k)}) \log p(x^{(i)}_j|z^{(i)}=1,\theta) \\
+          & + \sum_{j=1}^{n} \sum_{i=1}^{m}  p(z^{(i)}=0|x^{(i)},\theta ^{(k)}) \log p(x^{(i)}_j|z^{(i)}=0,\theta)\\
+        = & \sum_{i=1}^{m} p(z^{(i)}=1|x^{(i)},\theta ^{(k)}) \left(\sum_{x^{(i)}_j=1} \log \Sigma_{j,1}+\sum_{x^{(i)}_j=0}^{n}  \log (1-\Sigma_{j,1}) \right)\\
+        & + \sum_{i=1}^{m} p(z^{(i)}=0|x^{(i)},\theta ^{(k)}) \left(\sum_{x^{(i)}_j=0} \log \Sigma_{j,0}+\sum_{x^{(i)}_j=0}^{n}  \log (1-\Sigma_{j,0}) \right)
+      \end{align}
+
+      于是$Q(\theta,\theta^{(k)})= part(1)+part(2)$
+
+  \item[确定EM算法的M步]
+  首先确定$\mu$，令$\nabla_{\mu} Q(\theta,\theta^{(k)})=0$，由于$part(2)$与$\mu$无关，于是$\nabla_{\mu}part(1)=0$,根据\ref{p1}整理得到
+  \begin{equation}\label{mu}
+    \mu= \frac{\sum\limits_{i=1}^{m} p(z^{(i)}=1|x^{(i)},\theta ^{(k)})}
+    {\sum\limits_{i=1}^{m}\left(p(z^{(i)}=1|x^{(i)},\theta ^{(k)})+p(z^{(i)}=0|x^{(i)},\theta ^{(k)})\right)}
+  \end{equation}
+  然后确定$\Sigma_{j,1}$，令$\nabla_{\Sigma_{j,1}}Q(\theta,\theta^{(k)})=0$，由于$part(1)$与$\Sigma$无关，因此等价于$\nabla_{\Sigma_{j,1}}part(2)=0$,根据\ref{p2}式，可以得到
+  \[ \frac{\sum\limits_{i:x^{(i)}_j=1}p(z^{(i)}=1|x^{(i)},\theta ^{(k)})}{\Sigma_{j,1}} + \frac{\sum\limits_{i:x^{(i)}_j=0} p(z^{(i)}=1|x^{(i)},\theta ^{(k)})}{\Sigma_{j,1}-1}=0\]
+
+  整理得到
+  \begin{align}\label{j1}
+    \Sigma_{j,1}= & \frac{\sum\limits_{i:x^{(i)}_j=1}p(z^{(i)}=1|x^{(i)},\theta ^{(k)})}{\sum\limits_{i:x^{(i)}_j=1}p(z^{(i)}=1|x^{(i)},\theta ^{(k)})+\sum\limits_{i:x^{(i)}_j=0} p(z^{(i)}=1|x^{(i)},\theta ^{(k)})} \\
+    =& \frac{\sum\limits_{i:x^{(i)}_j=1}p(z^{(i)}=1|x^{(i)},\theta ^{(k)})}{\sum\limits_{i=1}^{m} p(z^{(i)}=1|x^{(i)},\theta ^{(k)})}
+  \end{align}
+  同理可以得到
+  \begin{align}\label{j0}
+    \Sigma_{j,0}= & \frac{\sum\limits_{i:x^{(i)}_j=1}p(z^{(i)}=0|x^{(i)},\theta ^{(k)})}{\sum\limits_{i=1}^{m} p(z^{(i)}=0|x^{(i)},\theta ^{(k)})} \\
+    = & \frac{\sum\limits_{i:x^{(i)}_j=1}\left(1-p(z^{(i)}=1|x^{(i)},\theta ^{(k)})\right)}{1-\sum\limits_{i=1}^{m} p(z^{(i)}=1|x^{(i)},\theta ^{(k)})}
+  \end{align}
+\end{description}
+\subsection{算法步骤}
+\begin{enumerate}
+  \item 在$[0,1]$之间随机生成$\mu^{(0)},\Sigma_{j,1}^{(0)},\Sigma_{j,0}^{(0)}$，并且使其满足概率归一化条件
+  \item 开始迭代，根据式\ref{mu},式\ref{j1},式\ref{j0}分别计算$\mu^{(k+1)},\Sigma^{(k+1)}$
+  \item 如果$\|\theta^{(k+1)}-\theta^{(k)} \|<\epsilon$，退出迭代，输出模型，否则返回第2步
+\end{enumerate}
+\section*{分工说明}
+李沛泽同学完成了条件随机场的梯度下降算法推导，晁越同学完成了非监督朴素贝叶斯的EM算法推导。
+\end{spacing}
+\end{document} 

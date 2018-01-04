@@ -1,0 +1,207 @@
+\documentclass[a4paper,oneside,12pt]{article}
+
+\usepackage{ctex}
+\usepackage{booktabs}
+\usepackage{indentfirst}%首行缩进宏包
+\usepackage{cite}%引用宏包
+\usepackage{setspace}%间距宏包
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepgflibrary{arrows}
+\usepackage{graphicx}%图片
+\usepackage{float}%强制图片位置
+\usepackage[unicode=true,colorlinks,linkcolor=blue]{hyperref}%链接宏包
+\usepackage{hyperref}
+\usepackage{makecell,rotating,multirow,diagbox}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[titletoc]{appendix}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\usepackage{cite}
+\usepackage[francais]{babel}
+
+\setlength{\parindent}{2em}%设置默认缩进
+
+
+\title{机器学习第三次作业}
+\author{李沛泽\footnote{工学院,1701111586@pku.edu.cn}:1701111586 \\晁越\footnote{物理学院,litterel@pku.edu.cn}:1601110127}
+\date{2018.01.03}
+
+
+\begin{document}
+\bibliographystyle{plain}
+\begin{spacing}{1.5}%1.5倍行距
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+
+\section{基本算法介绍}
+\subsection{FP-growth算法}
+本次作业中核心算法是FP-growth算法，在团队查找以及最常涉猎主题查找中均主要使用该算法。\par
+FP-growth算法基于Apriori构建，但采用了不同的技术。该算法核心是构建一个FP树，然后在FP树结构中挖掘频繁项集。FP-growth算法比Apriori算法执行速度快很多，一般性能要好两个数量级以上。\par
+FP-growth算法发现频繁项集的基本过程如下：
+\begin{enumerate}
+\item 构建FP树
+\item 从FP树中挖掘频繁项集
+\end{enumerate}
+\par
+在具体程序中，创建了一个类treeNode来保存FP树的每个节点数据，使用treeNode类来创建FP树。FP树的构建函数为createTree()，FP树构建过程中会扫描数据集两次。主要步骤如下：
+\begin{enumerate}
+\item 遍历扫描数据集并统计每个元素项出现的频度，这些信息被存储在头指针表中
+\item 扫描头指针表删掉那些出现次数少于minSup的项。如果所有项都不频繁，就不需要进行下一步处理
+\item 对头指针表稍加扩展以便可以保存计数值及指向每种类型第一个元素项的指针
+\item 然后创建只包含空集合的根节点
+\item 再一次遍历数据集，这次只考虑那些频繁项
+\end{enumerate}
+\par
+创建好了FP树之后，就可以从中挖掘频繁项集，挖掘算法的实现在mineTree()函数中，主要有以下流程：
+\begin{enumerate}
+\item 对头指针表中的元素项按照其出现频率进行排序
+\item 将每个频繁项添加到频繁项集列表freqItemList中
+\item 递归地调用findPrefixPath()函数创建条件模式基
+\item 以每次得到的条件模式基构建条件FP树
+\item 对条件FP树调用mineTree()进行挖掘
+\end{enumerate}
+\par
+算法的具体实现在代码文件中，该算法主要参考自《机器学习实战》，并在此基础上对算法进行了一些改变。
+\subsection{数据处理}
+在这次作业中，根据所要处理数据的特点，我们使用了pandas.DataFrame型数据结构来储存数据。DataFrame是类似于excel表格的一种数据结构，具有简单直观以及易于检索筛选的特点。调用loadData.py文件中的loadData()函数，返回一个DataFrame类型的dataset。在实际处理的过程中，由于我们只需要 IJCAI, AAAI, COLT, CVPR, NIPS, KR, SIGIR,
+KDD这八个会议的信息，所以其他会议的数据被舍弃。另外考虑到有一些会议有子会议，比如FCA4AI@IJCAI，MPREF@AAAI，所以我们把这种类型的会议数据都归并到其主会议中。最后需要舍弃掉一些没有作者信息的不完整数据，我们得到了一个包含26710条数据的dataset，表头包括author，conference，title和year四项，为了便于后续处理，author项以集合的形式储存作者姓名，其他三项均是字符串，并且将dataset按照year和conference的顺序进行了升序排序，数据输出为dataset.csv文件。\par
+
+
+
+%\subsection{数据预处理算法}
+%FP-growth算法中createTree()函数需要输入类型为字典，因此使用FP-growth算法前需要对从文件中读取的数据进行预处理。预处理由createInitSet()函数完成，createInitSet()函数输入为一个list，返回为一个字典，主要包含以下几步：
+%\begin{enumerate}
+%\item 建立一个空字典
+%\item 遍历输入的list，为输入list中每一项为key值建立字典，并把字典value值赋值为0
+%\item 遍历输入的list，把每项对应的value值加1（一些研究组会多次出现，这样可以保证每个研究组对应的value 值等于其出现的次数）
+%\item 返回字典
+%\end{enumerate}
+\section{任务1}
+\subsection{活跃研究者查找}
+\begin{description}
+  \item[会议支持者] 这一部分的实现比较简单，通过调用loadData.py中的findSuppoters() 函数实现，并且安照会议进行分类。考虑到不同会议之间文章数目差别很大，我们取2007-2017年间每个会议发文章数量前20人作为会议的主要支持者，函数返回一个嵌套字典，包括会议的名称，主要支持者及其文章数目。得到的结果保存为为freqAuthors.txt\footnote{任务1的输出文件都保存在task\_1文件夹下} 文件。
+  \item[时间变化] 为了发现这些主要支持者的活跃程度，我们将2007-2017这11年分为五个时间段：2007-2009，2010-2011，2012-2013，2014-2015，2016-2017。调用findSuppotersChange()函数逐时间段进行分析，不同时间段的文章数储存在一个list 中，函数返回一个类似于findSupporters()的嵌套字典，只是将文章总数换成了不同时间段文章数的list。得到的结果保存为authorsChange.txt 文件。
+\end{description}
+
+
+我们发现，有一些会议的主要支持者当中，中国人（或者华裔）的比例很高，比如KDD，IJCAI，AAAI，而KR，COLT，SIGIR中则几乎没有；IJCAI，AAAI的主要支持者有很大一部分的重叠，比如Zhi-Hua Zhou，Feiping Nie，Heng Huang等13人，同时是这两个会议的主要支持者；此外，IJCAI，KR也有小部分重叠的主要主持者，比如Stefan Woltra，Carsten Lutz等五人。\par
+观察会议主要支持者的活跃程度可以发现，有一些支持者是在近几年逐渐活跃,如表(\ref{tab1})所示；有一些支持者几年来文章数比较平稳；如表(\ref{tab2})；有一些支持者早年比较活跃，近年来不再活跃，如表(\ref{tab3})。
+
+
+\begin{table}[htbp]
+\caption{逐年活跃\label{tab1}}
+\center
+\begin{tabular}{ccccccc}
+\toprule
+conference & author & 07-09 & 10-11 & 12-13 & 14-15 & 16-17 \\
+\midrule
+AAAI& Feiping Nie &1 &3 &4 & 8 &17\\
+AAAI& Dacheng Tao	&0&1&2	&5	&15\\
+CVPR& Bernt Schiele	&7&	8&6	&12	&20\\
+CVPR& Ming-Hsuan Yang &3	&2	&8	&14	&17\\
+CVPR&Stefanos Zafeiriou		&1&	6&	4	&10&	18\\
+NIPS& Lawrence Carin	&4	&4	&6	&11	&14\\
+\bottomrule
+\end{tabular}
+
+\end{table}
+\begin{table}[htbp]
+\caption{数量平稳\label{tab2}}
+\center
+\begin{tabular}{ccccccc}
+\toprule
+conference & author & 07-09 & 10-11 & 12-13 & 14-15 & 16-17 \\
+\midrule
+CVPR&  Shuicheng Yan	&14&	11&13	&14	&15\\
+KDD& Jieping Ye &11	&7	&12	&11	&11\\
+SIGIR&Iadh Ounis	&	9&	6&	9&	7&	7\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[htbp]
+\caption{不再活跃\label{tab3}}
+\center
+\begin{tabular}{ccccccc}
+\toprule
+conference & author & 07-09 & 10-11 & 12-13 & 14-15 & 16-17 \\
+\midrule
+AAAI&David C. Parkes		&8	&8	&4	&1&	0\\
+CVPR&Horst Bischof	&17&17&9&6&3 \\
+SIGIR&Ryen W. White &10&10&14&7&2\\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{研究团队查找}
+调用loadData.py中的findFreqTeam()函数可以发现经常合作的团队，这里我们把最小支持度minSup设置为5，并且要求团队人数大于等于3，函数返回一个字典，得到的结果输出为freqTeam.txt文件。表(\ref{tab4})显示了部分频繁团队。
+
+\begin{table}[htbp]
+\caption{频繁团队\label{tab4}}
+\center
+\begin{tabular}{cc}
+\toprule
+团队核心成员 & 文章数 \\
+\midrule
+Min Zhang , Yiqun Liu, Shaoping Ma	&	18 \\
+Xueqi Cheng, Yanyan Lan, Jiafeng Guo	&	18\\
+Hua Wang, Heng Huang, Feiping Nie	&	15\\
+Heng Huang, Feiping Nie, Chris H. Q. Ding		&13\\
+Jun Xu, Xueqi Cheng, Jiafeng Guo	&	12\\
+Jun Xu, Yanyan Lan, Jiafeng Guo	&	12\\
+Jun Xu, Yanyan Lan, Xueqi Cheng	&	12\\
+Jun Xu, Yanyan Lan, Xueqi Cheng, Jiafeng Guo	&	12\\
+Bart Selman, Carla P. Gomes, Stefano Ermon	&	11\\
+Chang Xu, Dacheng Tao, Chao Xu 	&	11\\
+$\cdots$ & $\cdots $ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section{任务2}
+\subsection{团队主题查找}
+在进行团队主题提取的工作上，有下面几点值得考虑
+\begin{enumerate}
+\item 最理想的情况是通过对title中的词进行语义分析，从而把相近或相同主题的词分为一类主题词。但由于这项工作已经超出了本课程的范围，难度较大，而且频繁团队的文章数并不多，可以用来学习的样本太少，所以并没有采用
+\item 将title直接进行分词，去掉一些常见词以及无关紧要的单词，然后进行频数统计，通过频数分布来判断团队的主题，这样做有点类似于朴素贝叶斯法则，不过实际处理当中并没有先验概率以及条件概率分布，所以需要在全部数据集上使用非监督学习方法或者半监督学习方法去生成这些参数，这样的话工作量会非常大，所以我们没有通过求后验概率最大化的方法去提取主题，而是直接使用观察归纳高频词的方法来进行主题提取
+\item 由于每个频繁团队的文章数其实很少，由表(\ref{tab4})可知，最多的也不过18篇，而且发表在不同的期刊上，所以我们可以根据期刊类型以及文章的标题直接分析出主题
+
+\end{enumerate}
+综合我们要处理数据的特点考虑，我们采用了第2，3种方法来进行主题提取。\par
+每个团队的信息都以.csv的格式储存在task\_2文件夹下，主题信息则是将高频词储存为.txt文件。为了方便，我们只分析文章数大于11的团队\footnote{要考察的时间段一共是11年，如果达不到每年都发一篇文章的话，也没有必要去考察团队主题及其随时间的变化了。}，于是我们得到了10个团队，包括9个三人团队以及一个4人团队。
+
+\subsection{团队主题及变化情况分析}
+下面我们将分析团队主题及其变化情况，可以在task\_2文件夹中找到对应的.csv以及.txt文件进行检查。
+
+\begin{description}
+
+  \item[Stefano Ermon, Bart Selman, Carla P. Gomes] 该团队一共发表文章11篇，发表在IJCAI，AAAI以及NIPS上；主要涉及parallel problem decomposition(2015-2017)，markov chain (2011-2012)以及partition function(2011-2012)等主题；在2011-2014年，该团队主要与Ashish Sabharwal合作，在2014-2016年，该团队主要与Yexiang Xue合作。
+  
+  \item[Shaoping Ma, Yiqun Liu, Min Zhang] 该团队一共发表文章18篇，发表在IJCAI，SIGIR，AAAI上；主要涉及click model(2011-2013)，web search(2015-2017)，information search(2011-2017)等主题；该团队在2014 年左右经常与Yongfeng Zhang合作，其他时间段的合作者不是很固定，文章作者一般都在5 人以上。
+  
+  \item[Jun Xu, Yanyan Lan, Jiafeng Guo, Xueqi Cheng] 该团队\footnote{这个四人团队实际上包括了四个三人团队的子集，从数据情况来看，四个三人子团队和这个四人团队的文章情况大致一样，因此我们只分析这个四人团队的文章，将其子集忽略}一共发表文章12 篇，发表在IJCAI，NIPS，SIGIR，AAAI上，并且集中在2015-2017 年；主要涉及learning model(2015)，NLP(2016)，markov decision process(2017)等主题；该团队除了核心四人之外，每年的构成人员都有变化，和Liang Pang的合作次数比较多一些。
+  
+  \item[Feiping Nie, Heng Huang, Hua Wang]该团队一共发表文章15篇，发表在AAAI，IJCAI，NIPS，SIGIR，CVPR上；主要涉及multi-instance learning(2011-2012)，semi-unsupervised and unsupervised learning(2013-2017)，以及学习算法的robust性能等主题；在2014年前该团队和Chris H. Q. Ding 合作很多，2014年之后主要是自己独立发表文章。
+
+  \item[Feiping Nie, Heng Huang, Chris H. Q. Ding] 该团队一共发表文章13篇，发表在IJCAI，NIPS，AAAI，SIGIR，KDD，CVPR上；主要涉及matrix theory(2012-2013)，regression(2013-2015)，low-rank(2012-2015)，以及n-norm maximation and minimization(2010-2012)等主题；该团队在2011-2013年和Hua Wang 合作比较多，此外和Xiao Cai也有一定的合作。
+  \item[Chao Xu, Dacheng Tao, Chang Xu] 该团队一共发表文章11篇，发表在AAAI，IJCAI，KDD，NIPS上；主要涉及multi-label(2013-2017)，neural networks(2016-2017)等主题；该团队在2013-2016年期间主要是独立发表文章，2017的文章主要是和别的作者一起合作完成，文章作者一般是4到6人。
+\end{description}
+
+\section{关于分工和一些细节}
+这次作业，李沛泽同学完成了fpGrowth算法和相关文档的编写工作，晁越同学完成了数据处理，后续分析以及相关文档的编写工作。fpGrowth算法参考了``Machine Learning in Action''第12章的内容，数据处理参考了``Python for Data Analysis''第5，6章的内容。\par
+fpGrowth.py中包含了fpGrowth算法，loadData.py中包含了所有的数据处理函数，task\_1.py用来输出任务1的数据，task\_2.py用来输出任务2的数据，两组数据分别输出到task\_1 和task\_2文件夹中。
+
+
+
+%\bibliography{514917,350132}
+
+\end{spacing}
+\end{document} 

@@ -1,0 +1,10 @@
+diversification		3
+search		3
+result		3
+matching		3
+ranking		2
+evaluation		2
+recommendation		2
+rank		2
+representations		2
+word		2

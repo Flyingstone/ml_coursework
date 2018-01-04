@@ -1,0 +1,176 @@
+##########
+IJCAI
+Feiping Nie		2	3	6	3	22
+Zhi-Hua Zhou		4	4	5	4	13
+Nicholas R. Jennings		9	3	6	3	5
+Toby Walsh		7	1	5	6	5
+Dacheng Tao		0	1	3	3	17
+Tuomas Sandholm		8	1	2	2	7
+Qiang Yang 0001		9	6	0	0	5
+Edith Elkind		1	7	1	4	7
+Jérôme Lang		9	4	0	2	4
+Milind Tambe		4	3	4	2	6
+Heng Huang		0	4	6	3	6
+Carsten Lutz		5	3	2	3	5
+Frank Wolter		4	3	3	5	3
+Ariel D. Procaccia		6	1	3	4	4
+Shlomo Zilberstein		5	2	4	2	4
+Giuseppe De Giacomo		3	3	3	4	4
+Stefan Woltran		2	2	2	5	6
+Vincent Conitzer		7	3	1	1	4
+Deng Cai		2	0	4	1	9
+Thomas Eiter		7	1	1	2	5
+##########
+AAAI
+Qiang Yang 0001		12	9	5	5	6
+Milind Tambe		3	4	6	13	8
+Zhi-Hua Zhou		4	6	3	8	12
+Feiping Nie		1	3	4	8	17
+Tuomas Sandholm		7	3	5	12	5
+Sarit Kraus		5	6	10	8	2
+Vincent Conitzer		3	6	5	8	6
+Peter Stone		2	6	2	7	10
+Toby Walsh		4	8	4	8	3
+Ariel D. Procaccia		2	4	7	9	5
+Heng Huang		0	5	4	6	10
+Nicholas R. Jennings		5	7	5	5	2
+Dacheng Tao		0	1	2	5	15
+Shlomo Zilberstein		4	5	2	5	6
+Kristian Kersting		1	3	7	6	5
+David C. Parkes		8	8	4	1	0
+Edith Elkind		3	4	3	4	6
+Piotr Faliszewski		3	5	1	6	3
+Craig Boutilier		4	5	2	6	0
+Ariel Felner		4	4	6	1	2
+##########
+CVPR
+Shuicheng Yan		14	11	13	14	15
+Xiaoou Tang		18	10	8	13	11
+Luc J. Van Gool		12	15	12	15	3
+Xiaogang Wang		5	5	11	15	21
+Marc Pollefeys		9	10	10	10	14
+Bernt Schiele		7	8	6	12	20
+Horst Bischof		17	17	9	6	3
+Pascal Fua		16	8	8	5	10
+Thomas S. Huang		22	9	6	3	6
+Mubarak Shah		15	7	8	9	7
+Ming-Hsuan Yang 0001		3	2	8	14	17
+Trevor Darrell		12	4	4	9	13
+Kristen Grauman		6	14	8	5	8
+Larry S. Davis		8	5	13	4	11
+Raquel Urtasun		5	5	9	12	9
+Stefanos Zafeiriou		1	6	4	10	18
+Jitendra Malik		8	5	5	12	7
+Chunhua Shen		2	6	7	10	12
+Shih-Fu Chang		10	3	14	5	5
+Cordelia Schmid		12	6	7	7	4
+##########
+NIPS
+Michael I. Jordan		13	7	10	8	7
+Lawrence Carin		4	4	6	11	14
+Pradeep Ravikumar		5	5	8	16	3
+Francis R. Bach		9	8	5	4	8
+Ruslan Salakhutdinov		6	5	10	5	7
+Inderjit S. Dhillon		2	6	4	13	7
+Han Liu		3	3	7	11	6
+Rémi Munos		6	8	5	6	5
+David M. Blei		8	3	5	6	7
+Yee Whye Teh		10	3	8	5	3
+Yoshua Bengio		5	4	3	9	8
+Le Song		6	3	3	9	7
+Eric P. Xing		6	7	7	3	4
+Bernhard Schölkopf		10	5	6	1	5
+Prateek Jain 0002		2	5	4	9	6
+Alexander J. Smola		11	4	3	4	3
+Martin J. Wainwright		8	4	8	0	5
+Andreas Krause 0001		2	6	2	5	10
+Mehryar Mohri		7	1	3	7	6
+Zoubin Ghahramani		4	3	5	8	3
+##########
+SIGIR
+Maarten de Rijke		10	7	9	19	16
+Ryen W. White		10	10	14	7	2
+Leif Azzopardi		10	10	7	7	7
+W. Bruce Croft		12	9	7	5	7
+Craig Macdonald		10	6	9	8	6
+Iadh Ounis		9	6	9	7	7
+Oren Kurland		7	3	9	7	4
+ChengXiang Zhai		8	7	2	7	5
+Luo Si		5	9	5	6	3
+Eugene Agichtein		8	7	6	5	2
+Charles L. A. Clarke		9	1	5	5	5
+Joemon M. Jose		8	4	4	6	3
+Jimmy J. Lin		3	5	5	5	7
+James Allan		8	4	5	4	3
+Pavel Serdyukov		6	3	6	6	3
+Milad Shokouhi		6	4	5	7	1
+Tat-Seng Chua		2	4	3	5	9
+Ben Carterette		5	6	6	3	3
+Jamie Callan		6	1	1	6	8
+Mark Sanderson		7	3	0	6	5
+##########
+KDD
+Jiawei Han 0001		9	7	14	13	10
+Jieping Ye		11	7	12	11	11
+Christos Faloutsos		18	6	9	7	7
+Philip S. Yu		8	9	12	6	4
+Hui Xiong		8	4	1	7	17
+Hanghang Tong		5	4	3	6	7
+Wei Fan		4	5	5	7	4
+Naren Ramakrishnan		2	5	5	5	6
+Jimeng Sun		4	3	7	2	6
+Jure Leskovec		5	2	3	3	7
+Deepak Agarwal		4	7	1	4	4
+Jie Tang		2	4	4	7	2
+Tao Li 0001		5	4	5	1	3
+Jing Gao		3	1	2	4	8
+Qiang Yang 0001		3	1	4	5	4
+Huan Liu		6	2	6	1	2
+Eric P. Xing		4	2	2	4	4
+Ravi Kumar 0001		8	4	2	2	0
+Eamonn J. Keogh		4	3	3	3	2
+Jian Pei		7	2	0	3	3
+##########
+COLT
+Alexander Rakhlin		7	0	2	4	4
+Maria-Florina Balcan		7	1	1	2	4
+Shai Shalev-Shwartz		6	3	0	2	3
+Manfred K. Warmuth		5	3	2	4	0
+Yishay Mansour		4	2	1	2	5
+Karthik Sridharan		4	3	2	3	2
+Ohad Shamir		5	2	2	2	2
+Shie Mannor		3	3	3	2	1
+Elad Hazan		3	3	1	3	1
+Vitaly Feldman		3	0	2	3	3
+Jacob D. Abernethy		8	1	0	1	0
+Nicolò Cesa-Bianchi		3	2	1	2	2
+Peter L. Bartlett		5	0	3	1	0
+Nathan Srebro		6	0	0	1	2
+Sébastien Bubeck		1	2	1	4	1
+Rong Ge 0001		0	0	1	5	3
+Santosh Vempala		2	0	0	4	2
+Gábor Lugosi		5	0	1	1	1
+Shai Ben-David		4	1	1	2	0
+Claudio Gentile		2	2	2	0	2
+##########
+KR
+Stefan Woltran		2	4	3	1	2
+Carsten Lutz		1	5	3	2	1
+Giuseppe De Giacomo		3	2	3	0	3
+Sébastien Konieczny		3	2	3	2	1
+Diego Calvanese		2	0	4	2	2
+Hector J. Levesque		1	1	3	3	2
+Frank Wolter		1	3	3	2	0
+Joseph Y. Halpern		2	2	1	2	1
+Alessio Lomuscio		1	1	2	3	1
+Gerhard Lakemeyer		2	1	1	2	1
+Pierre Marquis		1	1	3	2	0
+Sheila A. McIlraith		2	1	0	2	1
+James P. Delgrande		2	1	1	2	0
+Riccardo Rosati		2	1	1	1	1
+Fabio Patrizi		1	1	2	1	1
+Thomas Eiter		1	3	0	1	1
+Meghyn Bienvenu		1	2	1	1	1
+Georg Gottlob		1	0	1	4	0
+Roman Kontchakov		1	2	1	1	1
+Bernardo Cuenca Grau		1	1	2	0	1

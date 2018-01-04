@@ -1,0 +1,176 @@
+##########
+IJCAI
+Feiping Nie		36
+Zhi-Hua Zhou		30
+Nicholas R. Jennings		26
+Toby Walsh		24
+Dacheng Tao		24
+Tuomas Sandholm		20
+Qiang Yang 0001		20
+Edith Elkind		20
+Jérôme Lang		19
+Milind Tambe		19
+Heng Huang		19
+Carsten Lutz		18
+Frank Wolter		18
+Ariel D. Procaccia		18
+Shlomo Zilberstein		17
+Giuseppe De Giacomo		17
+Stefan Woltran		17
+Vincent Conitzer		16
+Deng Cai		16
+Thomas Eiter		16
+##########
+AAAI
+Qiang Yang 0001		37
+Milind Tambe		34
+Zhi-Hua Zhou		33
+Feiping Nie		33
+Tuomas Sandholm		32
+Sarit Kraus		31
+Vincent Conitzer		28
+Peter Stone		27
+Toby Walsh		27
+Ariel D. Procaccia		27
+Heng Huang		25
+Nicholas R. Jennings		24
+Dacheng Tao		23
+Shlomo Zilberstein		22
+Kristian Kersting		22
+David C. Parkes		21
+Edith Elkind		20
+Piotr Faliszewski		18
+Craig Boutilier		17
+Ariel Felner		17
+##########
+CVPR
+Shuicheng Yan		67
+Xiaoou Tang		60
+Luc J. Van Gool		57
+Xiaogang Wang		57
+Marc Pollefeys		53
+Bernt Schiele		53
+Horst Bischof		52
+Pascal Fua		47
+Thomas S. Huang		46
+Mubarak Shah		46
+Ming-Hsuan Yang 0001		44
+Trevor Darrell		42
+Kristen Grauman		41
+Larry S. Davis		41
+Raquel Urtasun		40
+Stefanos Zafeiriou		39
+Jitendra Malik		37
+Chunhua Shen		37
+Shih-Fu Chang		37
+Cordelia Schmid		36
+##########
+NIPS
+Michael I. Jordan		45
+Lawrence Carin		39
+Pradeep Ravikumar		37
+Francis R. Bach		34
+Ruslan Salakhutdinov		33
+Inderjit S. Dhillon		32
+Han Liu		30
+Rémi Munos		30
+David M. Blei		29
+Yee Whye Teh		29
+Yoshua Bengio		29
+Le Song		28
+Eric P. Xing		27
+Bernhard Schölkopf		27
+Prateek Jain 0002		26
+Alexander J. Smola		25
+Martin J. Wainwright		25
+Andreas Krause 0001		25
+Mehryar Mohri		24
+Zoubin Ghahramani		23
+##########
+SIGIR
+Maarten de Rijke		61
+Ryen W. White		43
+Leif Azzopardi		41
+W. Bruce Croft		40
+Craig Macdonald		39
+Iadh Ounis		38
+Oren Kurland		30
+ChengXiang Zhai		29
+Luo Si		28
+Eugene Agichtein		28
+Charles L. A. Clarke		25
+Joemon M. Jose		25
+Jimmy J. Lin		25
+James Allan		24
+Pavel Serdyukov		24
+Milad Shokouhi		23
+Tat-Seng Chua		23
+Ben Carterette		23
+Jamie Callan		22
+Mark Sanderson		21
+##########
+KDD
+Jiawei Han 0001		53
+Jieping Ye		52
+Christos Faloutsos		47
+Philip S. Yu		39
+Hui Xiong		37
+Hanghang Tong		25
+Wei Fan		25
+Naren Ramakrishnan		23
+Jimeng Sun		22
+Jure Leskovec		20
+Deepak Agarwal		20
+Jie Tang		19
+Tao Li 0001		18
+Jing Gao		18
+Qiang Yang 0001		17
+Huan Liu		17
+Eric P. Xing		16
+Ravi Kumar 0001		16
+Eamonn J. Keogh		15
+Jian Pei		15
+##########
+COLT
+Alexander Rakhlin		17
+Maria-Florina Balcan		15
+Shai Shalev-Shwartz		14
+Manfred K. Warmuth		14
+Yishay Mansour		14
+Karthik Sridharan		14
+Ohad Shamir		13
+Shie Mannor		12
+Elad Hazan		11
+Vitaly Feldman		11
+Jacob D. Abernethy		10
+Nicolò Cesa-Bianchi		10
+Peter L. Bartlett		9
+Nathan Srebro		9
+Sébastien Bubeck		9
+Rong Ge 0001		9
+Santosh Vempala		8
+Gábor Lugosi		8
+Shai Ben-David		8
+Claudio Gentile		8
+##########
+KR
+Stefan Woltran		12
+Carsten Lutz		12
+Giuseppe De Giacomo		11
+Sébastien Konieczny		11
+Diego Calvanese		10
+Hector J. Levesque		10
+Frank Wolter		9
+Joseph Y. Halpern		8
+Alessio Lomuscio		8
+Gerhard Lakemeyer		7
+Pierre Marquis		7
+Sheila A. McIlraith		6
+James P. Delgrande		6
+Riccardo Rosati		6
+Fabio Patrizi		6
+Thomas Eiter		6
+Meghyn Bienvenu		6
+Georg Gottlob		6
+Roman Kontchakov		6
+Bernardo Cuenca Grau		5

@@ -1,0 +1,10 @@
+search		8
+web		5
+predicting		3
+information		3
+analysis		2
+propagation		2
+vertical		2
+fraudulent		2
+telephone		2
+phrase-level		2

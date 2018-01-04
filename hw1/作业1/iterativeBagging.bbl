@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{Breiman:2001:UIB:514915.514917}
+Leo Breiman.
+\newblock Using iterated bagging to debias regressions.
+\newblock {\em Mach. Learn.}, 45(3):261--277, December 2001.
+
+\bibitem{Webb:2000:MTC:350128.350132}
+Geoffrey~I. Webb.
+\newblock Multiboosting: A technique for combining boosting and wagging.
+\newblock {\em Mach. Learn.}, 40(2):159--196, August 2000.
+
+\end{thebibliography}

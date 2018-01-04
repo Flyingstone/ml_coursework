@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Random Forest和Bagging算法}{3}{section.1}
+\contentsline {section}{\numberline {2}IterativeBagging算法\cite {Breiman:2001:UIB:514915.514917}}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}IterativeBagging回归算法介绍}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}IterativeBagging分类算法介绍}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}IterativeBagging算法程序实现}{6}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}IterativeBagging回归算法程序实现}{6}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}IterativeBagging分类算法程序实现}{7}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}IterativeBagging算法测试}{8}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}IterativeBagging回归算法测试}{8}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}IterativeBagging分类算法测试}{10}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}IterativeBagging算法效果总结}{12}{subsubsection.2.4.3}
+\contentsline {section}{\numberline {3}Multiboosting算法\cite {Webb:2000:MTC:350128.350132}}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Multiboosting算法介绍}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Multiboosting算法实现}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Multiboosting算法测试}{15}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}基分类器数量}{15}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}决策树最大深度}{15}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Multiboosting结果分析}{16}{subsection.3.4}
+\contentsline {section}{\numberline {A}关于分工}{18}{appendix.A}
+\contentsline {section}{\numberline {B}关于程序的说明}{18}{appendix.B}

@@ -1,0 +1,14 @@
+author,conference,title,year
+"{'Feiping Nie', 'Heng Huang', 'Xiao Cai', 'Chris H. Q. Ding'}",NIPS,"efficient and robust feature selection via joint ℓ2, 1-norms minimization.",2010
+"{'Feiping Nie', 'Dijun Luo', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",IJCAI,robust principal component analysis with non-greedy l1-norm maximization.,2011
+"{'Farhad Kamangar', 'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",NIPS,maximum margin multi-instance learning.,2011
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",SIGIR,cross-language web page classification via dual knowledge transfer using nonnegative matrix tri-factorization.,2011
+"{'Feiping Nie', 'Heng Huang', 'Chris H. Q. Ding'}",AAAI,low-rank matrix recovery via efficient schatten p-norm minimization.,2012
+"{'Feiping Nie', 'Dijun Luo', 'Heng Huang', 'Chris H. Q. Ding'}",NIPS,forging the graphs: a low rank and positive semidefinite graph learning approach.,2012
+"{'Feiping Nie', 'Heng Huang', 'Jin Huang', 'Chris H. Q. Ding'}",AAAI,supervised and projected sparse coding for image classification.,2013
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",CVPR,heterogeneous visual features fusion via sparse multimodal machine.,2013
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",IJCAI,early active learning via robust representation and structured sparsity.,2013
+"{'Feiping Nie', 'Heng Huang', 'Hua Wang', 'Chris H. Q. Ding'}",IJCAI,adaptive loss minimization for semi-supervised elastic embedding.,2013
+"{'Jin Huang', 'Yu Lei', 'Feiping Nie', 'Heng Huang', 'Chris H. Q. Ding'}",IJCAI,social trust prediction using rank-k matrix recovery.,2013
+"{'Xiao Cai', 'Heng Huang', 'Feiping Nie', 'Chris H. Q. Ding'}",KDD,on the equivalent of low-rank linear regressions and linear discriminant analysis based regressions.,2013
+"{'Xiao Cai', 'Shuai Zheng 0002', 'Feiping Nie', 'Heng Huang', 'Chris H. Q. Ding'}",AAAI,a closed form solution to multi-view low-rank regression.,2015
